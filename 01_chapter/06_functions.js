@@ -64,4 +64,6 @@ function handleArray(getArray) {
     return getArray[2]
     
 }
-console.log(handleArray(myArray));
+console.log(handleArray(myArray));  
+// we can also do this with directly passing the arrays
+console.log(handleArray([100,200,400,800]));

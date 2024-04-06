@@ -1,0 +1,1 @@
+console.log("This codespace is about events in JavaScript");

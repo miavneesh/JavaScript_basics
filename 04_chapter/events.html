@@ -66,15 +66,24 @@
 //  },false)
     
      // we can also stop this propagation by using stopPropagation
-   document.getElementById('images').addEventListener('click',function(event){
-    console.log("images clicked");
- },false)
+//    document.getElementById('images').addEventListener('click',function(event){
+//     console.log("images clicked");
+//  },false)
 
-   document.getElementById('himalaya').addEventListener('click',function(event){
-    console.log('himalaya clicked')
-    event.stopPropagation()
+//    document.getElementById('himalaya').addEventListener('click',function(event){
+//     console.log('himalaya clicked')
+//     event.stopPropagation()
 
- },false)
+//  },false)
+
+ //to remove images by using different events
+ document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        let element = e.target.parentNode
+    element.remove()
+    }
+})
 
 </script>
 </html>
